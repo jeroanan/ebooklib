@@ -235,7 +235,7 @@ class MobiReader(object):
             for i in xrange(self.exth_header["record_count"]):
                 exth_record = parse_exth_record(src)
                 data_size = exth_record["record_length"] - 8
-                print exth_record, src.read(data_size)
+                print(exth_record, src.read(data_size))
             #padding_size = calc_padding(exth_header["header_length"], 4)
             #src.read(padding_size)
 
